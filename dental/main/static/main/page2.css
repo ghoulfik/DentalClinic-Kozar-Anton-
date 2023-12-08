@@ -1,0 +1,182 @@
+/* Стилі для body */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: white; /* Змінено фон на білий */
+}
+
+/* Стилі для іконки меню */
+.menu-toggle {
+  position: fixed;
+  top: 10px; /* Відступ зверху */
+  left: 10px; /* Відступ зліва */
+  z-index: 2; /* Підняти іконку над зеленою лінією */
+  cursor: pointer;
+}
+
+/* Стилі для полосок іконки меню */
+.menu-bar {
+  width: 25px;
+  height: 3px;
+  background-color: white; /* Колір білий */
+  margin-bottom: 5px;
+  transition: transform 0.3s ease;
+  border-radius: 5px; /* Заокруглення */
+}
+
+
+.menu-toggle:hover .menu-bar {
+  transform: scaleX(1.2);
+}
+.menu-container {
+  position: relative; /* Позиціонування контейнера */
+  padding-left: 35px; /* Щоб врахувати ширину іконки */
+}
+
+/* Стилі для блоку меню */
+.menu {
+  background-color: #4CAF50;
+  width: 200px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: -200px;
+  transition: left 0.3s ease-in-out, opacity 0.3s ease-out;
+  opacity: 0;
+  pointer-events: none;
+  border-radius: 0 10px 10px 0;
+}
+
+.menu-toggle:hover + .menu,
+.menu:hover {
+  left: 0;
+  opacity: 1;
+  pointer-events: auto;
+}
+.green-line {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50px; /* Ширина лінії, яка відповідає ширині іконки меню */
+  height: 100vh; /* Висота лінії = 100% висоти екрану */
+  background-color: #4CAF50; /* Зелений колір лінії */
+  z-index: 1; /* Задаємо z-index, щоб лінія була під меню */
+}
+
+/* Стилі для напису "МЕНЮ" */
+.menu-label {
+  color: white;
+  padding: 10px;
+  margin-bottom: 10px; /* Відступ для розділення */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5); /* Лінія для розділення */
+  text-align: center; /* Відцентрування тексту */
+}
+
+.menu-label a {
+  text-decoration: none;
+  color: white;
+}
+
+.menu-label:hover + .menu {
+  left: 0;
+  opacity: 1;
+  pointer-events: auto; /* Увімкнення івентів при відображенні меню */
+}
+
+/* Стилі для списку елементів меню */
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Відцентрування до ліва */
+}
+
+/* Стилі для пунктів списку меню */
+.menu ul li {
+  width: 100%; /* Розтягнення по ширині */
+  text-align: left; /* Вирівнювання тексту вліво */
+}
+
+/* Стилі для кнопок у списку меню */
+.menu ul li a {
+  display: block;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s ease; /* Анімація при наведенні */
+}
+
+.menu ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Зміна кольору при наведенні */
+}
+
+/* Стилі для кнопок у списку меню */
+.menu-button {
+  padding: 8px 12px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 16px;
+  text-align: left;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Анімація при наведенні */
+}
+
+.menu-button:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Зміна кольору при наведенні */
+}
+
+/* Стилі для контейнера надпису "Лікарі" */
+.doctors-heading-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: right;
+  line-height: 1.5;
+  padding-left: 60px;
+  margin-top: 30px;
+  border-bottom: 3px solid black;
+}
+
+/* Стилі для надпису "Лікарі" */
+.doctors-heading {
+  color: green;
+  padding-left: 80px;
+  display: inline; /* Налаштування надпису як інлайн-елемента для правильного вирівнювання */
+}
+
+/* Стилі для зовнішнього контейнера кнопок */
+.buttons-outer-container {
+  flex-grow: 1; /* Займає доступний вільний простір */
+  text-align: right; /* Вирівнювання до правого краю */
+}
+
+/* Стилі для контейнера кнопок */
+.buttons-container {
+  display: flex;
+  justify-content: right;
+  margin-right: 80px;
+}
+
+/* Стилі для кнопок */
+.square-button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  margin-left: 10px; /* Між кнопками */
+  border-radius: 5px;
+}
+
+/* Зелена кнопка */
+.green-button {
+  background-color: #4CAF50;
+}
+
+/* Червона кнопка */
+.red-button {
+  background-color: red;
+}
