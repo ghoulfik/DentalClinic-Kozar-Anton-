@@ -1,5 +1,6 @@
+
 /* Стилі для контейнера надпису "Лікарі" */
-.doctors-heading-container {
+.patients-heading-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -11,7 +12,7 @@
 }
 
 /* Стилі для надпису "Лікарі" */
-.doctors-heading {
+.patients-heading {
   color: green;
   padding-left: 80px;
   display: inline; /* Налаштування надпису як інлайн-елемента для правильного вирівнювання */
@@ -49,16 +50,3 @@
   background-color: red;
 }
 
-/* Стилі для списку лікарів */
-.doctor-list {
-  margin-top: 20px; /* Регулювання верхнього відступу */
-}
-
-.doctor-list ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.doctor-list ul li {
-  margin-bottom: 5px; /* Регулювання відступу між елементами списку */
-}
