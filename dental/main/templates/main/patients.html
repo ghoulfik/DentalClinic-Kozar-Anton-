@@ -12,4 +12,10 @@
       </div>
     </div>
   </div>
+{%for el in info%}
+  <div class="alert alert-warning">
+    <h3>{{el.title}}</h3>
+    <p>{{el.date}}</p>
+  </div>
+{%endfor%}
 {% endblock %}

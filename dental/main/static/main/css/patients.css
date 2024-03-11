@@ -1,4 +1,3 @@
-
 /* Стилі для контейнера надпису "Лікарі" */
 .patients-heading-container {
   display: flex;
@@ -49,4 +48,15 @@
 .red-button {
   background-color: red;
 }
+
+.alert-warning
+{
+    float: left;
+    clear: both;
+    width: 400px;
+    margin: 20px 34%;
+    text-align: left;
+ }
+
+
 
