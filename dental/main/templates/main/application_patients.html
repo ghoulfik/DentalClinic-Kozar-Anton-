@@ -1,0 +1,41 @@
+{% extends 'main/layout.html' %}
+
+{% block title  %} Анкета {% endblock %}
+
+{% block content  %}
+  <div class="container green">
+    <h2>Пацієнт</h2>
+    <form method="post">
+      {%csrf_token%}
+       <label for="name">Ім'я:</label>
+      {{form.title}}
+      <label for="phone">Номер телефону:</label>
+      {{form.num}}
+      <label for="address">Адреса:</label>
+      {{form.address}}
+       <label for="dob">Дата народження:</label>
+      {{form.date}}
+      <label for="additional-info">Додаткова інформація:</label>
+      {{form.info}}
+      <br>
+      <span>{{error}}</span>
+      <!--
+      <label for="name">Ім'я:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="phone">Номер телефону:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="address">Адреса:</label>
+      <input type="text" id="address" name="address" required>
+
+      <label for="dob">Дата народження:</label>
+      <input type="date" id="dob" name="dob" required>
+
+      <label for="additional-info">Додаткова інформація:</label>
+      <textarea id="additional-info" name="additional-info" rows="4"></textarea>
+    -->
+      <input type="submit" value="Підтвердити">
+    </form>
+  </div>
+{% endblock %}

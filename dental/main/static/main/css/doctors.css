@@ -7,13 +7,15 @@
   line-height: 1.5;
   padding-left: 60px;
   margin-top: 30px;
-  border-bottom: 3px solid black;
+  border-bottom: 2px solid gray;
 }
 
 /* Стилі для надпису "Лікарі" */
 .doctors-heading {
   color: green;
-  padding-left: 80px;
+  padding-left: 50px;
+  padding-right: 20px;
+  margin-bottom: 10px;
   display: inline; /* Налаштування надпису як інлайн-елемента для правильного вирівнювання */
 }
 
@@ -61,4 +63,13 @@
 
 .doctor-list ul li {
   margin-bottom: 5px; /* Регулювання відступу між елементами списку */
+<<<<<<< Updated upstream
+=======
+}
+
+.button-image {
+    width: 30px;
+    height: auto;
+    margin-left: 1px;
+>>>>>>> Stashed changes
 }

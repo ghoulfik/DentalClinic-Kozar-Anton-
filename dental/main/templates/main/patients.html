@@ -3,14 +3,26 @@
 {% block title %} Пацієнти {% endblock %}
 
 {% block content %}
-  <div class="patients-heading-container">
+{% load static %}
+<div class="patients-heading-container">
     <h1 class="patients-heading">Пацієнти</h1>
+    <form class="search-form">
+        <input type="text" class="search-bar" placeholder="Пошук...">
+        <button type="submit" class="search-button">Знайти</button>
+    </form>
     <div class="buttons-outer-container">
-      <div class="buttons-container">
-        <a href="/application"><button class="square-button green-button">ADD</button></a>
-        <button class="square-button red-button">DEL</button>
-      </div>
+        <div class="buttons-container">
+            <a href="/application_patients  ">
+                <button class="square-button green-button">
+                    <img src="{% static '/main/img/plus.png' %}" alt="" class="button-image">
+                </button>
+            </a>
+            <button class="square-button red-button">
+                <img src="{% static '/main/img/bin.png' %}" alt="" class="button-image">
+            </button>
+        </div>
     </div>
+<<<<<<< Updated upstream
   </div>
 {%for el in info%}
   <div class="alert alert-warning">
@@ -19,3 +31,8 @@
   </div>
 {%endfor%}
 {% endblock %}
+=======
+</div>
+
+{% endblock %}
+>>>>>>> Stashed changes

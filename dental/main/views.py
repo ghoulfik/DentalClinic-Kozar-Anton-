@@ -13,6 +13,7 @@ def patients(request):
     info=Artiles.objects.order_by('date')
     return render(request, 'main/patients.html', {'info':info})
 
+<<<<<<< Updated upstream
 def application(request):
     error=""
     if request.method=="POST":
@@ -31,3 +32,10 @@ def application(request):
 
     }
     return render(request, 'main/application.html', data)
+=======
+def application_doctors(request):
+    return render(request, 'main/application_doctors.html')
+
+def application_patients(request):
+    return render(request, 'main/application_patients.html')
+>>>>>>> Stashed changes

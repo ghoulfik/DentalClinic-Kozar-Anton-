@@ -1,26 +1,29 @@
+<<<<<<< Updated upstream
 /* Стилі для контейнера надпису "Лікарі" */
+=======
+/* Стилі для контейнера надпису "Пацієнти" */
+>>>>>>> Stashed changes
 .patients-heading-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  text-align: right;
-  line-height: 1.5;
   padding-left: 60px;
   margin-top: 30px;
-  border-bottom: 3px solid black;
+  border-bottom: 2px solid gray;
 }
 
-/* Стилі для надпису "Лікарі" */
+/* Стилі для надпису "Пацієнти" */
 .patients-heading {
   color: green;
-  padding-left: 80px;
-  display: inline; /* Налаштування надпису як інлайн-елемента для правильного вирівнювання */
+  padding-left: 50px;
+  padding-right: 20px;
+  display: inline;
 }
 
 /* Стилі для зовнішнього контейнера кнопок */
 .buttons-outer-container {
-  flex-grow: 1; /* Займає доступний вільний простір */
-  text-align: right; /* Вирівнювання до правого краю */
+  flex-grow: 1;
+  text-align: right;
 }
 
 /* Стилі для контейнера кнопок */
@@ -35,8 +38,9 @@
   width: 40px;
   height: 40px;
   border: none;
-  margin-left: 10px; /* Між кнопками */
+  margin-left: 10px;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 /* Зелена кнопка */
@@ -49,6 +53,7 @@
   background-color: red;
 }
 
+<<<<<<< Updated upstream
 .alert-warning
 {
     float: left;
@@ -60,3 +65,44 @@
 
 
 
+=======
+/* Пошук */
+.search-form {
+    display: flex;
+    margin-left: auto;
+    margin-right: 80px;
+}
+
+.search-bar {
+    width: 300px;
+    height: 40px;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.search-button {
+    width: 80px;
+    height: 40px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #3e8e41;
+}
+
+.button-image {
+    width: 30px;
+    height: auto;
+    margin-left: 1px;
+}
+>>>>>>> Stashed changes
