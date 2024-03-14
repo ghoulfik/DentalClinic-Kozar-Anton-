@@ -3,24 +3,13 @@
 {% block title  %} Лікарі {% endblock %}
 
 {% block content  %}
-{% load static %}
   <div class="doctors-heading-container">
     <h1 class="doctors-heading">Лікарі</h1>
-    <form class="search-form">
-        <input type="text" class="search-bar" placeholder="Пошук...">
-        <button type="submit" class="search-button">Знайти</button>
-    </form>
     <div class="buttons-outer-container">
-        <div class="buttons-container">
-            <a href="/application_doctors">
-                <button class="square-button green-button">
-                    <img src="{% static '/main/img/plus.png' %}" alt="" class="button-image">
-                </button>
-            </a>
-            <button class="square-button red-button">
-                <img src="{% static '/main/img/bin.png' %}" alt="" class="button-image">
-            </button>
-        </div>
+      <div class="buttons-container">
+        <button class="square-button green-button">ADD</button>
+        <button class="square-button red-button">DEL</button>
+      </div>
     </div>
   </div>
 {% endblock %}

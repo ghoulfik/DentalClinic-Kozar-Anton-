@@ -3,12 +3,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #FAF6ED;
-}
-
-.body-class{
-  background-color: #FAF6ED;
-  font-family: 'Roboto Mono', monospace;
+  background-color: white; /* Змінено фон на білий */
 }
 
 /* Стилі для іконки меню */
@@ -24,7 +19,7 @@ body {
 .menu-bar {
   width: 25px;
   height: 3px;
-  background-color: #F1F2EC; /* Колір білий */
+  background-color: white; /* Колір білий */
   margin-bottom: 5px;
   transition: transform 0.3s ease;
   border-radius: 5px; /* Заокруглення */

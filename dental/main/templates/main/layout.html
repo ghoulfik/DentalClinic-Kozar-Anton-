@@ -4,17 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <title>{% block title %}{% endblock %}</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css"  href="{%static 'main/css/layout.css' %}">
+  <link rel="stylesheet" type="text/css"  href="{% static 'main/css/layout.css' %}">
   <link rel="stylesheet" type="text/css"  href="{%static 'main/css/doctors.css' %}">
   <link rel="stylesheet" type="text/css"  href="{%static 'main/css/patients.css' %}">
   <link rel="stylesheet" type="text/css"  href="{%static 'main/css/application.css' %}">
 
 </head>
-<body class="body-class">
+<body>
   <div class="green-line">
     <div class="menu-container">
       <div class="menu-toggle">
@@ -27,6 +24,11 @@
         <ul>
           <li><a href="{% url 'patients' %}" class="menu-button">Пацієнти</a></li>
           <li><a href="{% url 'doctors' %}" class="menu-button">Лікарі</a></li>
+          <li><a href="page3.html" class="menu-button">Послуги</a></li>
+          <li><a href="page4.html" class="menu-button">Пошта</a></li>
+          <li><a href="page5.html" class="menu-button">Налаштування</a></li>
+          <li><a href="page6.html" class="menu-button">Користувачі</a></li>
+          <li><a href="page7.html" class="menu-button">Обслуговування</a></li>
           <li><a href="page8.html" class="menu-button">Додаткові поля</a></li>
         </ul>
       </div>
