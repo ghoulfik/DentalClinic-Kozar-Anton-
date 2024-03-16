@@ -1,8 +1,8 @@
 from django.shortcuts import render, redirect
 from .models import Artiles
 from .forms import ArtilesForm
-
 # Create your views here.
+
 def index(request):
     return render(request, 'main/index.html')
 
