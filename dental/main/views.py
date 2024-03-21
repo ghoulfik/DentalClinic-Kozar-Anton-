@@ -31,3 +31,9 @@ def application(request):
 
     }
     return render(request, 'main/application.html', data)
+
+def services(request):
+    return render(request, 'main/services.html')
+
+def maintenance(request):
+    return render(request, 'main/maintenance.html')

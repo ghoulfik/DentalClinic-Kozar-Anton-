@@ -1,0 +1,34 @@
+{% extends 'main/layout.html' %}
+
+{% block title %} Обслуговування {% endblock %}
+
+{% block content %}
+
+{% load static %}
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+      <h2>Історія клініки</h2>
+      <p>
+        Наша клініка була заснована у 1980 році лікарем-стоматологом <strong>Дмитром Андрійовичем Шмаровим</strong>. З того часу ми дотримуємося найвищих стандартів якості медичної допомоги.
+      </p>
+      <p>
+        За роки своєї роботи ми набули величезного досвіду в різних галузях стоматології, включаючи <strong>профілактику</strong>, <strong>лікування</strong>, <strong>хірургічні втручання</strong>, <strong>косметичну стоматологію</strong> та <strong>імплантологію</strong>.
+      </p>
+      <p>
+        Ми впевнені, що наш досвід та професійна етика зробить наше обслуговування незамінним для вас.
+      </p>
+    </div>
+    <div class="col-md-4">
+      <h2>Контактна інформація</h2>
+      <address>
+        <strong>Наша адреса:</strong><br>
+        <p>м. Київ,<br>
+        вул. Павленка, 10</p>
+      </address>
+      <abbr title="Phone">Телефон:</abbr> (044) 123-45-67<br>
+      <abbr title="Email">E-mail:</abbr> <a href="mailto:info@dentist.ua">info@dentist.ua</a>
+    </div>
+  </div>
+</div>
+{% endblock %}

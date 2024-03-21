@@ -1,9 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap')
+
 /* Стилі для body */
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: white; /* Змінено фон на білий */
+  background-color: #FAF6ED;
+}
+
+.logo{
+  font-family: "PT Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #FAF6ED;
+}
+.content{
+  height: 100vh;
+}
+
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 50px;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.header h2 {
+  font-size: 24px;
+  color: #555;
+  margin-top: 20px;
 }
 
 /* Стилі для іконки меню */
@@ -13,6 +46,7 @@ body {
   left: 10px; /* Відступ зліва */
   z-index: 2; /* Підняти іконку над зеленою лінією */
   cursor: pointer;
+
 }
 
 /* Стилі для полосок іконки меню */
