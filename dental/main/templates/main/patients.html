@@ -3,12 +3,21 @@
 {% block title %} Пацієнти {% endblock %}
 
 {% block content %}
+
+{% load static %}
+
   <div class="patients-heading-container">
     <h1 class="patients-heading">Пацієнти</h1>
     <div class="buttons-outer-container">
       <div class="buttons-container">
-        <a href="/application"><button class="square-button green-button">ADD</button></a>
-        <button class="square-button red-button">DEL</button>
+            <a href="/application">
+                <button class="square-button green-button">
+                    <img src="{% static 'main/img/plus.png' %}" class="button-image">
+                </button>
+            </a>
+            <button class="square-button red-button">
+                <img src="{% static 'main/img/bin.png' %}" class="button-image">
+            </button>
       </div>
     </div>
   </div>
