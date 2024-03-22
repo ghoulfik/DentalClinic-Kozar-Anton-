@@ -1,0 +1,41 @@
+.container-fluid {
+  padding: 0;
+}
+
+.row {
+  margin-left: 50px;
+}
+
+.services-heading {
+  padding: 30px 0;
+  text-align: center;
+}
+
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.service-card {
+  padding: 20px;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.service-content {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .services-heading {
+    padding: 20px 0;
+  }
+  .services-list {
+    grid-template-columns: 1fr;
+  }
+}

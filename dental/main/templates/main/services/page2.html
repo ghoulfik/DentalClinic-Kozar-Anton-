@@ -1,0 +1,27 @@
+{% extends 'main/layout.html' %}
+
+{% block title  %} Послуги {% endblock %}
+
+{% block content  %}
+
+{% load static %}
+<div class="container-fluid">
+    <div class="section-heading text-center">
+        <h1>Консультація лікаря</h1>
+        <p>Кожному пацієнту надається індивідуальна консультація з нашим досвідченим лікарем.</p>
+    </div>
+    <div class="section-heading text-center">
+        <div class="doctor-bio">
+              <h2>Доктор Джейн Сміт</h2>
+              <p>Докторе Джейн Сміт є висококваліфікованим лікарем з досвідом роботи в...</p>
+              <ul>
+                <li>Багаторічний досвід роботи в...</li>
+                <li>Спеціалізоване навчання в...</li>
+                <li>Членство в...</li>
+              </ul>
+              <a href="mailto:[dr.janesmith@email.com](mailto:dr.janesmith@email.com)" class="doctor-email"><i class="fas fa-envelope-square"></i> Напишіть доктору Джейн Сміт</a>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

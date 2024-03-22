@@ -37,3 +37,24 @@ def services(request):
 
 def maintenance(request):
     return render(request, 'main/maintenance.html')
+
+def reviews(request):
+    return render(request, 'main/reviews.html')
+
+def page1(request):
+    return render(request, 'main/services/page1.html')
+
+def page2(request):
+    return render(request, 'main/services/page2.html')
+
+def page3(request):
+    return render(request, 'main/services/page3.html')
+
+def page4(request):
+    return render(request, 'main/services/page4.html')
+
+def page5(request):
+    return render(request, 'main/services/page5.html')
+
+def page6(request):
+    return render(request, 'main/services/page6.html')

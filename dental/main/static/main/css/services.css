@@ -33,12 +33,14 @@
   transform: translateY(-5px);
 }
 
-.col-md-4{
+.col-md-4,
+.col-sm-6 {
   margin-top: 10px;
 }
 
 @media (max-width: 767.98px) {
   .service-card {
-    height: 100%;margin-bottom: 20px;
+    height: 100%;
+    margin-bottom: 20px;
   }
 }
