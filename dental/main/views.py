@@ -1,7 +1,13 @@
 from django.shortcuts import render, redirect
 from .models import Artiles
 from .forms import ArtilesForm
+from django.views.generic import DetailView
 # Create your views here.
+
+class NewsDetailView(DetailView):
+    model=Artiles
+    template_name = 'main/details_view.html'
+    context_object_name = 'article'
 
 def index(request):
     return render(request, 'main/index.html')

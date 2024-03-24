@@ -1,6 +1,8 @@
 from .models import Artiles
 from django.forms import ModelForm, TextInput, DateInput, Textarea
 
+
+
 class ArtilesForm(ModelForm):
     class Meta:
         model=Artiles

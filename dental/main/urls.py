@@ -14,5 +14,6 @@ urlpatterns = [
     path('dentistry', views.page3, name='dentistry'),
     path('treatment', views.page4, name='treatment'),
     path('surgery', views.page5, name='surgery'),
-    path('prices', views.page6, name='prices')
+    path('prices', views.page6, name='prices'),
+    path('patients/<int:pk>', views.NewsDetailView.as_view(), name='news-detail')
 ]
