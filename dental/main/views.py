@@ -1,8 +1,20 @@
 from django.shortcuts import render, redirect
 from .models import Artiles
 from .forms import ArtilesForm
-from django.views.generic import DetailView
+from django.views.generic import DetailView, UpdateView, DeleteView
 # Create your views here.
+
+class NewsDeleteView (DeleteView):
+    model = Artiles
+    success_url='/patients'
+    template_name = 'main/info-delete.html'
+
+
+class NewsUpdateView(UpdateView):
+    model = Artiles
+    template_name = 'main/application.html'
+    form_class = ArtilesForm
+    #fields = ['title','num','address','date','info']
 
 class NewsDetailView(DetailView):
     model=Artiles

@@ -14,6 +14,9 @@ class Artiles(models.Model):
     def __str__(self):
         return f' Name: {self.title}'
 
+    def get_absolute_url(self):
+        return f'/patients/{self.id}'
+
     class Meta:
         verbose_name= 'Patient'
         verbose_name_plural = 'Patients'

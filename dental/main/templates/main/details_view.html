@@ -9,5 +9,7 @@
     <p>{{article.num}}</p>
     <p>{{article.address}}</p>
     <p>{{article.info}}</p>
+    <a href="{% url 'news-delete' article.id %}" class="btn btn-danger">Видалити</a>
+    <a href="{% url 'news-update' article.id %}" class="btn btn-success">Змінити</a>
   </div>
 {% endblock %}

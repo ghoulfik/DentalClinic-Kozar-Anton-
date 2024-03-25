@@ -15,5 +15,7 @@ urlpatterns = [
     path('treatment', views.page4, name='treatment'),
     path('surgery', views.page5, name='surgery'),
     path('prices', views.page6, name='prices'),
-    path('patients/<int:pk>', views.NewsDetailView.as_view(), name='news-detail')
+    path('patients/<int:pk>', views.NewsDetailView.as_view(), name='news-detail'),
+    path('patients/<int:pk>/update', views.NewsUpdateView.as_view(), name='news-update'),
+    path('patients/<int:pk>/delete', views.NewsDeleteView.as_view(), name='news-delete'),
 ]
