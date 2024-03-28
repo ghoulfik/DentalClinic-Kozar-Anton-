@@ -1,4 +1,4 @@
-/* Стилі для контейнера надпису "Лікарі" */
+/* Стилі для контейнера надпису "Пацієнти" */
 .patients-heading-container {
   display: flex;
   justify-content: space-between;
@@ -10,32 +10,25 @@
   border-bottom: 2px solid gray;
 }
 
-/* Стилі для надпису "Лікарі" */
+/* Стилі для надпису "Пацієнти" */
 .patients-heading {
   color: green;
   padding-left: 80px;
-  display: inline; /* Налаштування надпису як інлайн-елемента для правильного вирівнювання */
-}
-
-/* Стилі для зовнішнього контейнера кнопок */
-.buttons-outer-container {
-  flex-grow: 1; /* Займає доступний вільний простір */
-  text-align: right; /* Вирівнювання до правого краю */
+  display: inline;
 }
 
 /* Стилі для контейнера кнопок */
-.buttons-container {
-  display: flex;
-  justify-content: right;
-  margin-right: 80px;
+.buttons-outer-container {
+  flex-grow: 1;
+  text-align: right;
 }
 
 /* Стилі для кнопок */
 .square-button {
-  width: 100px;
-  height: 100px;
+  width: 45px;
+  height: 45px;
   border: none;
-  margin-left: 10px; /* Між кнопками */
+  margin-left: 10px;
   border-radius: 5px;
 }
 
@@ -49,18 +42,31 @@
   background-color: red;
 }
 
-.alert-warning
-{
-    float: left;
-    clear: both;
-    width: 400px;
-    margin: 20px 34%;
-    text-align: left;
- }
+/* Стилі для контейнера сітки */
+.patient-grid-container {
+  margin: 0 20px;
+  margin-left: 65px;
+}
 
-.button-image {
-    width: 30px; /* Adjust as needed */
-    height: auto; /* Maintain aspect ratio */
+/* Стилі для рядка сітки */
+.patient-grid-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Стилі для елемента сітки */
+.patient-grid-item {
+  width: 31%;
+  margin: 10px 0;
+  text-align: left;
+}
+
+/* Стилі для алерту */
+.alert {
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
 }
 
 
