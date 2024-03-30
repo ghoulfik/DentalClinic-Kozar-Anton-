@@ -29,14 +29,17 @@ body {
 }
 
 .header h1 {
-  font-size: 50px;
+  font-size: 95px;
   font-weight: bold;
+  color: #15184a;
+  font-family: verdana;
 }
 
 .header h2 {
-  font-size: 24px;
-  color: #151922;
+  font-size: 40px;
+  color: #15184a;
   margin-top: 20px;
+  font-family: cursive;
 }
 
 /* Стилі для іконки меню */
@@ -70,7 +73,7 @@ body {
 
 /* Стилі для блоку меню */
 .menu {
-  background-color: #4CAF50;
+  background-color: #66d4b2;
   width: 200px;
   height: 100%;
   position: fixed;
@@ -94,7 +97,7 @@ body {
   left: 0;
   width: 50px; /* Ширина лінії, яка відповідає ширині іконки меню */
   height: 100vh; /* Висота лінії = 100% висоти екрану */
-  background-color: #4CAF50; /* Зелений колір лінії */
+  background-color: #66d4b2; /* Зелений колір лінії */
   z-index: 1; /* Задаємо z-index, щоб лінія була під меню */
 }
 

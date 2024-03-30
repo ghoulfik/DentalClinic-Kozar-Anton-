@@ -69,4 +69,12 @@
   border-radius: 5px;
 }
 
+.alert-warning{
+    float:left;
+    clear: both;
+    width: 400px;
+    margin: 20px 34%;
+    text-align:left;
+}
+
 
